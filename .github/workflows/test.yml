@@ -22,7 +22,7 @@ jobs:
           ls -a
       - uses: ./
         with:
-          github-token: ${{ secrets.PERSONAL }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           detect-version: 7.9.0
           blackduck-url: http://google.com
-          blackduck-api-token: ${{ secrets.PERSONAL }}
+          blackduck-api-token: ${{ secrets.GITHUB_TOKEN }}
